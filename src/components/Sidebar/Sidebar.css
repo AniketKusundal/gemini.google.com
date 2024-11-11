@@ -1,0 +1,98 @@
+.Sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(29, 26, 26);
+    padding: 25px 15px;
+    
+   
+}
+
+
+.Sidebar img{
+    width: 20px;
+}
+
+.Sidebar .Menu_icon{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.Sidebar .New_chat{
+    margin-top: 55px;
+    display: inline-flex;
+    padding: 10px 10px;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #fbfbfb;
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+}
+
+.New_chat .chat-text{
+    margin-top: 5px;
+    /* color: white; */
+
+}
+
+
+.Sidebar .Recent{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation: fadein 1.8s;
+
+}
+
+.Sidebar .Recent-Title{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.Sidebar .Recent-Entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 50px;
+    color: #282828;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.Sidebar .Recent-Entry:hover{
+    background-color: rgb(141, 139, 139);
+
+}
+
+
+
+.Sidebar .Bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Sidebar .Bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/* making sidebar responsive  */
+
+
+@media (max-width:600px){
+    .Sidebar{
+        display: none;
+    }
+}
